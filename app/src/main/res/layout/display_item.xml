@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ToolBar"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:text="播放界面"/>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/Music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:layout_marginTop="40dp" />
+    <ImageView
+        android:id="@+id/song_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/Music_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/op_button"
+        android:paddingBottom="30dp"
+        />
+    <LinearLayout
+        android:id="@+id/op_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp"
+        >
+    <include layout="@layout/playbackbar" />
+
+    </LinearLayout>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="back"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--/>-->
+
+</RelativeLayout>
